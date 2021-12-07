@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/new.css"/> 
+    <title>What's new</title>
+    
+</head>
+<body>
+    <%- include('header.ejs') %> 
+    <form method="get">
+    <div class="section">
+        
+        <input type="radio" name="slide" id="slide01" class="radio" checked>
+        <input type="radio" name="slide" id="slide02" class="radio">
+        <input type="radio" name="slide" id="slide03" class="radio">
+        
+        <div class="slidewrap">
+            <ul class="slidelist">
+                <li>
+                    <a>
+                        <label for="slide03" class="left"><p> &lt;</p></label>
+                        <img src="./images/summerdrink.jpg">
+                        <label for="slide02" class="right"><p>&gt;</p></label>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <label for="slide01" class="left"><p>&lt;</p></label>
+                        <img src="./images/drinkcollection.jpg">
+                        <label for="slide03" class="right"><p>&gt;</p></label>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <label for="slide02" class="left"><p>&lt;</p></label>
+                        <img src="./images/matcha.jpg">
+                        <label for="slide01" class="right"><p>&gt;</p></label>
+                    </a>
+                </li>  
+            </ul>
+         </div>
+        </div>
+    </form>
+    </body>
+ 
+</html>

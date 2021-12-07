@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mingtarbucks</title>
+    <link rel="shortcut icon" href="https://image.istarbucks.co.kr/common/img/common/favicon.ico?v=200828" type="image/ico">
+    <link rel="stylesheet" href="./css/starbucks.css"/>    
+    <style>
+       
+    </style>
+</head>
+
+<body> 
+    <div class="header">
+        <div class="header__logo">
+            <a href="/"><img src="./images/logo1.png" width="50px" height="50px" alt="로고"></a>
+        </div>
+        <ul class="header__menu">
+                <li><a href="./location">STORE</a></li>
+                <li><a href="./menu">MENU</a></li>
+                <li><a href="./reward">REWARDS</a></li>
+                <li><a href="./new">WHAT'S NEW</a></li>
+            </ul>
+        <ul class="header__login">
+        <% var id; %>
+        <% if(id == "mj") { %>
+            <li><a href="./logout">Logout</a></li>
+            <li><a href="#">my page</a></li>
+            </ul>
+        <% } else { %>
+            <li><a href="./login">Login</a></li>
+            <li><a href="./join">Join Now</a></li>
+            </ul>
+        <% } %>            
+            
+
+    </div>
+    <div class="section">
+        
+        <input type="radio" name="slide" id="slide01" class="radio" checked>
+        <input type="radio" name="slide" id="slide02" class="radio">
+        <input type="radio" name="slide" id="slide03" class="radio">
+        
+        <div class="slidewrap">
+            <ul class="slidelist">
+                <li>
+                    <a>
+                        <label for="slide03" class="left"><p> &lt;</p></label>
+                        <img src="./images/pic2.jpg">
+                        <label for="slide02" class="right"><p>&gt;</p></label>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <label for="slide01" class="left"><p>&lt;</p></label>
+                        <img src="./images/pic3.jpg">
+                        <label for="slide03" class="right"><p>&gt;</p></label>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <label for="slide02" class="left"><p>&lt;</p></label>
+                        <img src="./images/pic4.jpg">
+                        <label for="slide01" class="right"><p>&gt;</p></label>
+                    </a>
+                </li>  
+            </ul>
+         </div>
+        </div>
+
+        <ul class="miniblock">
+            <li><a href="./card"><img src="./images/spic1.jpg" width="300px" height="200px"></a></li>
+            <li><a href="./reward"><img src="./images/spic2.jpg" width="300px" height="200px"></a></li>
+            <li><a href="./shop"><img src="./images/spic3.jpg" width="300px" height="200px"></a></li>  
+        </ul>
+        
+        <div class="starcollect">
+            <table>
+                <tr>
+                    <th colspan="2"><h2>한 모금 마실 때마다 별을 수집합니다.</h2></th>
+                </tr>
+                <tr>
+                    <th colspan="2">밍타벅스®만의 특별한 혜택<br> 밍타벅스 리워드를 만나보세요
+                         <br>밍타벅스를 사랑해 주시는 고객님을 위해 별★을<br>
+                          적립하여 혜택으로 돌려드리는 특별한 리워드 서비스입니다.<br><br><br></th>
+                </tr>
+            </table>
+                <div class="join">
+                   
+                    <% if(id == "mj") { %>
+                        <div class="button"> <a href="./logout">로그아웃</a></button>
+                        </div>
+                        <div class="button">내 페이지</button>
+                        </div>
+                    <% } else { %>
+                        <div class="button"> <a href="./login">로그인</a></button>
+                        </div>
+                        <div class="button"><a href="./join">지금 가입하세요</a></button>
+                        </div>
+                    <% } %> 
+                    
+                    
+                    
+                </div>
+            
+            <div class="rewards">
+            <a  href="#"><img src="./images/6.jpg"></a>
+        </div>
+    </div>
+        
+            
+      

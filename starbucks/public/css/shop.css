@@ -1,0 +1,14 @@
+.picnic{
+    align-items: left;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-left: 590px; 
+}
+.write{
+    align-items: left;
+    float: left;
+    color: rgb(61, 7, 148);
+    text-shadow:3px 3px 7px  rgb(241, 170, 203); 
+    padding:20px;
+   
+}

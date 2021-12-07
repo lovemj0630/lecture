@@ -1,0 +1,14 @@
+.sign{
+    background-image: url("../images/sign.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border: 1px solid rgba(70, 11, 138,0.6);
+    
+}
+.middle{
+    color: cornsilk;
+    text-shadow:3px 3px 7px  darkkhaki; 
+    padding: 20px 20px; 
+}
+#fixed{
+    padding: 20px 20px;}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/members.css"/> 
+    <title>Sign Up-Mingtarbucks®Rewards</title>
+</head>
+<body>
+  
+    <h1>Mingtarbucks® Rewards </h1>
+    <hr>
+    <br>
+    <form method="get">
+    <div class= joinnow>
+        <p style="font-size: xx-large; font-weight: 400;">Join Now</p>
+        <br>
+        <input type="text" placeholder="아이디" name="id"><br>
+        <input type="text" placeholder="이름" name="name">
+        <p style="font-size: small; font-weight: 400;">Birthday</p>
+        <p style="font-size: xx-small;">Birthday month is required to receive Birthday Reward(s)<br>
+            Birthday cannot be changed after submission.</p><br>
+            <select name="month" name="month">
+                <% var month=["1월", "2월" , "3월" , "4월" , "5월" , "6월" , "7월" ,"8월", "9월"
+                , "10월" , "11월" , "12월" ] %>
+                <%for(i=1; i<=12; i++){ %>
+                  <option value="<%= i %>">
+                    <%= month[i-1] %>
+                  </option>
+                  <%} %>
+            </select>
+            <select name="day" name="day">
+                <%for(i=1; i<=31; i++){ %>
+                    <option value="<%= i %>">
+                      <%= i %>
+                    </option>
+                    <%} %>
+            </select>
+        <br>
+        <input type="text"  placeholder="Email Address" name="email"><br>
+        <input type="text"  placeholder="Mobile Number" name="phone"><br>
+        <input type="password" placeholder="Password"><br>
+        <p style="font-size: xx-small;">Password must:<br>
+        Have 9 or more characters<br>Contain alphabet and numeric characters
+        <br>Contain at least 1 special character (e.g. !, @, #, $, %, ^)></p><br>
+        <input type="password" placeholder="Confirm Password"><br>
+        <p style="font-weight: 400;">I have a physical Mingtarbucks Card</p>
+        
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+          </label><br>
+        <form>
+            <input type="checkbox" value="1"> Sign me up to receive exclusive offers, and news from Mingtarbucks via email, SMS and mail.<br>
+            <input type="checkbox" value="2"> I agree to the Mingtarbucks Privacy Policy and Terms of Use.<br>
+        
+    </div>
+    <br>
+  
+    <div class="join">                   
+            <input type="submit" value="joinnow">
+    </div>
+</form>
+</body>
+</html>
